@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Recipes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Created": {
+      "type": "date"
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "recipes"
+    },
+    "Tags": {
+      "type": "enumeration",
+      "enum": [
+        "drupal",
+        "theming",
+        "accessibility",
+        "js",
+        "styleguides",
+        "css"
+      ]
+    }
+  },
+  "connection": "default",
+  "collectionName": "recipes"
+}
