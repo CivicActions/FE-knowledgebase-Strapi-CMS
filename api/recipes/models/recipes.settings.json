@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "recipes",
   "info": {
     "name": "Recipes"
   },
@@ -32,8 +34,9 @@
         "styleguides",
         "css"
       ]
+    },
+    "Summary": {
+      "type": "text"
     }
-  },
-  "connection": "default",
-  "collectionName": "recipes"
+  }
 }
